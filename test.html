@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+
+
+var selectName = ["Javier", "Pedro", "Luis", "Eugenio",  "Jaime"];
+var firstNameGen = function () {
+var selectedName = selectName[Math.floor(Math.random() * selectName.length)];
+return selectedName;
+};
+
+
+var selectLastName = ["Alonso", "Perez", "Martinez", "Fernandez"];
+var lastNameGen = function () {
+var selectedLastName = selectLastName[Math.floor(Math.random() * selectLastName.length)];
+return selectedLastName;
+
+
+} 
+
+document.getElementById("demo").innerHTML =
+
+
+"The name that goes well with your son is: " + firstNameGen() + " " +  lastNameGen();
+
+function myFunction() {
+    location.reload();
+}
+
+</script>
+
+<button onclick= "myFunction()"> Try Again </button>
+
+</body>
+</html>
